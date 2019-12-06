@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Ubuntu&display=swap');
+:root{ 
+    font-family: 'Ubuntu', sans-serif;
+    --main-color: black;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .logo {
+    font-family: 'Press Start 2P', cursive;;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+header nav .menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header nav .menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+    header .menu {
+        flex: 1;
+    }
+}
+
+header .banner {
+    background-image: url(../img/jobs.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .banner h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    padding-left: 15rem;
+}
