@@ -1,9 +1,10 @@
 .box{
-  position:flex;
+  display: flex;
+  position: relative;;
   align-self: center;
   justify-self: center;
   padding-left: 15rem;
-  transform : translate(-50% ,-50%);
+  transform: translate(-50% ,-50%);
 }
 
 .btn:link,
@@ -20,7 +21,7 @@
 }
 
 .btn-white{
-  background:#fff;
+  background-color: #718093;
   color:#000;
 }
 
@@ -54,11 +55,11 @@
 }
 
 .btn-white::after {
-    background: #fff;
+    background: #718093;
 }
 
 .btn-animation-1:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.5);
     opacity: 0;
 }
 
@@ -68,7 +69,7 @@
     transform:translateY(40px);
   } 
   100%{
-    opacity:1;
+    opacity: 0.9;
     transform:translateY(0);
   }
 }
